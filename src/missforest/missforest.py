@@ -501,12 +501,12 @@ class MissForest:
         if not self._is_fitted:
             raise NotFittedError("MissForest is not fitted yet.")
 
-        _validate_2d(x)
-        _validate_empty_feature(x)
-        _validate_feature_dtype_consistency(x)
-        _validate_imputable(x)
-        _validate_cat_var_consistency(x.columns, self._categorical)
-        _validate_column_consistency(set(x.columns), set(self.column_order))
+        # _validate_2d(x)
+        # _validate_empty_feature(x)
+        # _validate_feature_dtype_consistency(x)
+        # _validate_imputable(x)
+        # _validate_cat_var_consistency(x.columns, self._categorical)
+        # _validate_column_consistency(set(x.columns), set(self.column_order))
 
         x = x[self.column_order].copy()
 
